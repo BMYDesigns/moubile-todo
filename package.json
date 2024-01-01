@@ -1,0 +1,12 @@
+{
+  "name": "mobile-only",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mobile": "sass -w ./styles/main.scss ./styles/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
