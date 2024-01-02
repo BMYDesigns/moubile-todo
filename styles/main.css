@@ -118,4 +118,56 @@
   height: 15px;
 }
 
+.completed-sect {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+.completed-sect h2 {
+  font-size: 13px;
+  text-align: start;
+  font-family: sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+}
+.completed-sect .complete-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.completed-sect .complete-container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.completed-sect .complete-container div input {
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  height: 2em;
+}
+.completed-sect .complete-container div svg {
+  height: 40px;
+}
+.completed-sect .complete-container div h3 {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #444444;
+}
+.completed-sect .complete-container .complete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.completed-sect .complete-container .complete svg {
+  height: 15px;
+}
+
 /*# sourceMappingURL=main.css.map */
