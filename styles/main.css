@@ -71,31 +71,42 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .todo-section h2 {
-  font-size: 20px;
+  font-size: 13px;
   text-align: start;
+  font-family: sans-serif;
+  color: #444444;
 }
 .todo-section .todo-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border: 2px solid red;
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .todo-section .todo-container div {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+.todo-section .todo-container div input {
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  height: 2em;
 }
 .todo-section .todo-container div svg {
-  height: 30px;
+  height: 40px;
 }
 .todo-section .todo-container div h3 {
-  font-size: 13px;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #444444;
 }
 .todo-section .todo-container .todo {
   display: flex;
