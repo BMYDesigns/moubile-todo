@@ -12,6 +12,10 @@
   height: 100vh;
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .desktop {
     display: none;
@@ -20,32 +24,35 @@
     width: 100%;
     height: 100vh;
   }
-  main {
+  .mobile {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100vh;
     padding: 20px 30px;
+    position: relative;
   }
-  main nav {
+  .mobile nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
   }
-  main nav svg {
+  .mobile nav svg {
     height: 30px;
   }
-  main nav .logo {
+  .mobile nav .logo {
     display: flex;
     align-items: center;
   }
-  main nav .logo svg {
+  .mobile nav .logo svg {
     height: 30px;
   }
-  main nav .logo h1 {
+  .mobile nav .logo h1 {
     font-size: 20px;
   }
-  main .input {
+  .mobile .input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +61,7 @@
     border-radius: 30px;
     background: rgba(136, 208, 208, 0.3019607843);
   }
-  main .input input {
+  .mobile .input input {
     font-size: 20px;
     border-radius: 30px;
     outline: none;
@@ -63,7 +70,7 @@
     border: none;
     background: none;
   }
-  main .input svg {
+  .mobile .input svg {
     height: 30px;
   }
 }
@@ -168,6 +175,36 @@
 }
 .completed-sect .complete-container .complete svg {
   height: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile .container {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    position: absolute;
+    border: 2px solid red;
+    background: white;
+    z-index: 1;
+    left: 0px;
+    top: 0;
+    gap: 20px 0px;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  .mobile .container .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .mobile .container .icons svg {
+    height: 30px;
+  }
+  .mobile .container hr {
+    justify-items: center;
+    margin: 0 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
