@@ -3,19 +3,19 @@
 @media screen and (max-width:600px){
     .mobile{
         .container{
-            display: flex;
+            display: none;
             flex-direction: column;
             width: 100px;
             position: absolute;
-            border: 2px solid red;
+            align-items: center;
             background: white;
             // justify-content: center;
             z-index: 1;
             left: 0px;
             top: 0              ;
-            gap: 20px 0px;
+            gap: 15px 0px;
             height: 100vh;
-            padding-top: 20px;
+            padding-top: 50px;
             .icons{
                 display: flex;
                 align-items: center;
@@ -26,12 +26,56 @@
                 }
             }
             hr{
-                // padding: 20px;
-                justify-items: center;
-             
-                margin: 0 10px;
+                
+
+            }
+            .toggle{
+                display: block;
+                align-items: center;
+                position: relative;
+                width: 60px;
+                height: 30px;
+                background: #c7c7c7;
+                border-radius: 20px;
+                #indicator{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    transform: scale(0.9);
+                    transition: all 0.3s ease-in;
+                    position: absolute;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    background: linear-gradient(to bottom, #444, #222);
+                }
+                
+                .left-wheel {
+                    translate: 30px 0;
+                }
+
+            }
+            .dark {
+                background: greenyellow;
+                
+            }
+            
+           
+           
+        }
+        .active {
+            display: flex;
+            
+        }
+        .night{
+            background: #182438;
+            .icons{
+                svg{
+                    fill: white;
+                }
             }
         }
         
     }  
+   
 }

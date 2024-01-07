@@ -37,6 +37,7 @@
         width: 100%;
         svg{
             height: 30px;
+            z-index: 40;
         }
         .logo{
             display: flex;
@@ -74,5 +75,15 @@
 
         }
     }
+
+    .dim {
+        opacity: .3;
+    }
+    
+}
+.nightmode{
+    background:  #182438;
+    color: white;
+    
 }
 }
